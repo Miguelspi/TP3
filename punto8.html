@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Artículos y Proveedores</title>
+</head>
+<body>
+    <h1>Gestión de Artículos y Proveedores</h1>
+    
+    <h2>Proveedores Registrados</h2>
+    <div id="listaProveedores"></div>
+    
+    <h2>Artículos Registrados</h2>
+    <div id="listaArticulos"></div>
+    
+    <h3>Agregar Nuevo Proveedor</h3>
+    <div>
+        <p>Nombre: <input type="text" id="provNombre"></p>
+        <p>Email: <input type="text" id="provEmail"></p>
+        <p>Teléfono: <input type="text" id="provTelefono"></p>
+        <button onclick="agregarProveedor()">Agregar Proveedor</button>
+    </div>
+    
+    <h3>Agregar Nuevo Artículo</h3>
+    <div>
+        <p>Nombre: <input type="text" id="artNombre"></p>
+        <p>Precio: <input type="number" id="artPrecio" step="0.01"></p>
+        <p>ID Proveedor: <input type="number" id="artProvId" min="0"></p>
+        <button onclick="agregarArticulo()">Agregar Artículo</button>
+    </div>
+    
+    <script src="punto8.js"></script>
+</body>
+</html>
